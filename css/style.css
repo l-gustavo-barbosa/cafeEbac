@@ -20,6 +20,7 @@ body {
     padding: 32px;
     border-bottom: solid 2px #E7B24D;
     justify-content: space-between;
+    background-color: #361A1A;
 }
 
 #logo-nav{
@@ -222,10 +223,11 @@ footer{
     flex-direction: column;
     border-top: 2px solid #E7B24D;
     width: calc(100% - 32px);
-    height: calc(auto - 32px);
-    padding: 16px;
+    height: calc(auto - 64px);
+    padding: 32px 16px;
     gap: 16px;
     align-items: center;
+    background-color: #361A1A;
 }
 
 footer #logo-footer{

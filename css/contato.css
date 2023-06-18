@@ -1,0 +1,120 @@
+
+h2 {
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: #E7B24D;
+    display: inline-block;
+    width: calc(100% - 64px);
+    margin: 16px 32px;
+}
+
+div {
+    background-image: url(../bg-form.png);
+    display: flex;
+    margin: 32px auto ;
+    width: calc(800px - 64px);
+    padding: 32px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 48px;
+}
+
+div h3{
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #361A1A;
+    padding: 32px;
+    background-color: #E7DDCB;
+    width: calc(100% - 64px);
+    border-radius: 16px 16px 0 0;
+}
+
+div form{
+    background-color: #E7DDCB;
+    display: flex;
+    flex-direction: column;
+    padding: 0 128px;
+    border-radius: 0 0 16px 16px;
+    gap: 4px;
+    
+
+}
+
+div form label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #361A1A;
+}
+
+div form input, div form textarea{
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+div ::placeholder{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.33);
+    
+}
+
+div form #enviar {
+    border-radius: 8px;
+    background-color: #E7B24D;
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+div form #enviar:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    div{
+        width: calc(80% - 32px);
+        padding: 16px;
+        border-radius: 32px;
+    }
+
+    div h3{
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #361A1A;
+        padding: 16px;
+        background-color: #E7DDCB;
+        width: calc(100% - 32px);
+        border-radius: 16px 16px 0 0;
+    }
+
+    div form{
+        padding: 0 16px;
+    }
+
+    div form label {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
