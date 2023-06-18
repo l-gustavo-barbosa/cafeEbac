@@ -1,0 +1,316 @@
+/* reseta as propriedades css que os navegadores inputam para padronizar o código em todos navegadores */
+@import url(reset.css);
+/* font roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font Goudy BookLetter1911*/
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+body {
+    background-color: #0A0400;
+}
+
+/* Top nav e menu */
+
+.topnav {
+    display: flex;
+    width: calc(100% - 64px);
+    max-height: calc(96px - 64px);
+    padding: 32px;
+    border-bottom: solid 2px #E7B24D;
+    justify-content: space-between;
+}
+
+#logo-nav{
+    max-width: 500px;
+}
+#logo-nav img {
+    height: 80%;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu li a{
+    padding: 0 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #E7B24D;
+    text-decoration: none;
+
+}
+
+#menu li a:hover{
+    border-bottom: solid 2px #E7B24D;
+}
+
+/* banner */
+
+#banner {
+    background-image: linear-gradient( to bottom, rgba(10,4,0,0.5), rgba(10,4,0)), 
+        url(../coffee.jpg);
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+#banner div {
+    max-width: 30%;
+
+    height: fit-content;
+}
+
+#banner div img{
+    max-height: 100px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#banner h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #EDD5C4;
+    text-align: center;
+}
+
+/* Secoes */ 
+
+.secao{
+    display: flex;
+    width: calc(100% - 64px);
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.secao h2{
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    color: #E7B24D;
+    width: 100%;
+}
+
+/* Quem somos */
+
+#quemSomos div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 656px;
+}
+
+#quemSomos div p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    max-width: 320px;
+}
+
+/* Produtos */
+
+#nossosProdutos ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    
+}
+
+#nossosProdutos li{
+    width: calc(360px - 32px);
+    height: calc(360px - 32px);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #E7DDCB;
+    border-radius: 32px;
+}
+
+#nossosProdutos li h3{
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+
+#nossosProdutos div{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+#nossosProdutos h5{
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+}
+
+#nossosProdutos div button {
+    width: 50%;
+    height: 43px;
+}
+
+#nossosProdutos div h5 {
+    width: 50%;
+
+    height: auto;
+}
+
+
+#nossosProdutos button {
+    border-radius: 16px;
+    border: none;
+    background-color: #E7B24D;
+}
+
+#nossosProdutos a{
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #0A0400;
+}
+
+#nossosProdutos li img{
+    width: 100%;
+}
+
+#nossosProdutos #cta-Revenda{
+    padding: 8px 32px;
+    background-color: #E7B24D;
+    border-radius: 16px;font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #E7B24D;
+    width: calc(100% - 32px);
+    height: calc(auto - 32px);
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+}
+
+footer #logo-footer{
+    max-width: 250px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+footer ul li a{
+    padding: 0 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #E7B24D;
+    
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+    .secao{
+        min-width: calc(100% - 16px);
+        padding: 0 8px;
+        height: fit-content;
+        margin: 16px 0;
+    }
+
+    .topnav{
+        flex-direction: column;
+        max-height: fit-content;
+        
+    }
+
+    .topnav #logo-nav{
+        text-align: center
+    }
+
+    .topnav #logo-nav img{
+        max-height: 48px;
+        max-width: 100%;
+    }
+
+    #menu li a{
+        font-size: 12px;
+    }
+
+    #banner {
+        aspect-ratio: 1;
+    }
+    
+    #banner div {
+        max-width: 80%;
+        height: fit-content;
+    }
+
+    #banner div img{
+        width: 100%;
+    }
+
+    #quemSomos div{
+        flex-direction: column;
+    }
+
+
+    #nossosProdutos ul {
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        
+    }
+
+    #nossosProdutos ul li{
+        min-width: calc(360px - 32px);
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+}
+
