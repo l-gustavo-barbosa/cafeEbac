@@ -1,0 +1,39 @@
+table {
+    margin: 24px 5%;
+    display: inline-block;
+    max-width: 90%;
+    overflow: scroll;
+}
+
+table thead tr th{
+    color: #0A0400;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Goudy Bookletter 1911';
+    background-color: #E7B24D;
+}
+
+table tbody tr{
+    color: #0A0400;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Goudy Bookletter 1911';
+    background-color: #fff;
+} 
+
+table tbody tr:nth-child(odd){
+    background-color: #E0C083;
+}
+
+table td, table th{
+    padding: 8px 16px;
+    border: 1px solid #0A0400;
+}
+
+table tfoot {
+    color: #E0C083;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+}

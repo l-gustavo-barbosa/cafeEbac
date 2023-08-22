@@ -2,18 +2,21 @@
 <html>
 <head>
     <title>Café Ebac - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/revenda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="logo.png" alt="Logo Café Ebac"></a>
-        <ul>
+    <nav class="topnav">
+        <a href="index.html" id="logo-nav"><img src="imagens/logo.png" alt="Logo Café Ebac"></a>
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="fazendas.html">Nossas Fazendas</a></li>
             <li><a href="revenda.html">Seja Revendedor</a></li>
         </ul>
     </nav>
-
     <h2>Seja Revendedor</h2>
     <table>
         <thead>
@@ -46,29 +49,31 @@
         </tbody>
         <tfoot>
             <tr>
-               <td>*Nos últimos 03 messes.</td> 
+               <td colspan="4">*Nos últimos 03 messes.</td> 
             </tr>
         </tfoot>
     </table>
-    <h3>Venha tomar um café conosco.</h3>
-    <form method="post">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome">
+    <div>
+        <h3>Venha tomar um café conosco.</h3>
+        <form method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui">
 
-        <label for="email">E-mail</label>
-        <input type="email" name="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu email aqui">
 
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="phone" name="phone" pattern="[1-9]{2} [0-9]{4,5}-[0-9]{4}">
-        
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem"></textarea>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="phone" name="phone" pattern="[1-9]{2} [0-9]{4,5}-[0-9]{4}" placeholder="Digite seu telefone aqui">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <input type="submit" value="Enviar Mensagem" id="enviar">
+        </form>
+    </div>
 
     <footer>
-        <img src="logo.png">
+        <img src="imagens/logo.png" id="logo-footer">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contato.html">Contato</a></li>

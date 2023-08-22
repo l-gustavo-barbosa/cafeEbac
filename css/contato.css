@@ -12,7 +12,7 @@ h2 {
 }
 
 div {
-    background-image: url(../bg-form.png);
+    background-image: url("../imagens/bg-form.png");
     display: flex;
     margin: 32px auto ;
     width: calc(800px - 64px);
@@ -115,6 +115,18 @@ div form #enviar:hover{
     div form label {
         font-size: 18px;
         line-height: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    div form{
+        width: calc(100% - 64px);
+        padding: 16px 32px;
+    }
+
+    div {
+        width: 80%;
     }
 
 }
